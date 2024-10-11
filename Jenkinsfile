@@ -12,6 +12,7 @@ pipeline {
                     echo %PATH%
                     k6 --version
                     k6 run loadtests/performance-test.js
+                    echo "hello"
                 '''
             }
         }
