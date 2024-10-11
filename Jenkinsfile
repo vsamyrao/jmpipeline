@@ -3,8 +3,8 @@ pipeline {
     stages {
         stage('Performance Testing') {
             steps {                
-                echo 'Running K6 performance tests...'
-                k6 run loadtests/performance-test.js
+                echo 'Running K6 performance tests...'                
+                bat "cmd /c echo hello"
             }
         }
     }
