@@ -1,5 +1,8 @@
 pipeline {
     agent any
+    environment {
+        PATH = "C:\Program Files\k6"
+    }
     stages {
         stage('Performance Testing') {
             steps {                
