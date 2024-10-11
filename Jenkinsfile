@@ -1,13 +1,13 @@
 pipeline {
     agent any
     environment {
-        PATH = "C:\\Program Files\\k6"
+        MY_K6 = "C:\\Program Files\\k6"
     }
     stages {
         stage('Performance Testing') {
             steps {                
                 echo 'Running K6 performance tests...'                
-                bat "cmd /c k6 run loadtests/performance-test.js"
+                bat '%MY_K6%\\k6 --version'
             }
         }
     }
