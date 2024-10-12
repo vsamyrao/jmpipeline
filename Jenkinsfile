@@ -21,7 +21,7 @@ pipeline {
     post {
         always {
             junit testResults: '**/report/*.xml', skipPublishingChecks: true
-            publishHTML (target: [allowMissing: false, alwaysLinkToLastBuild: false, keepAll: true, reportDir: 'report', reportFiles: 'summary.html', reportName: "summary"])
+            publishHTML(target: [allowMissing: false, alwaysLinkToLastBuild: false, keepAll: true, reportDir: 'report', reportFiles: 'summary.html', reportName: "summary"])
 
         }
     }
