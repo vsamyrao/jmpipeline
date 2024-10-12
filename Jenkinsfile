@@ -11,6 +11,7 @@ pipeline {
                 bat '''
                     echo %PATH%
                     k6 --version
+                    mkdir report
                     k6 run loadtests/performance-test.js
                     echo "hello"
                 '''
