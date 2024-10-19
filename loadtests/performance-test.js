@@ -9,7 +9,7 @@ export let options = {
   duration: "1m",
   vus: 50,
   thresholds: {
-    http_req_duration: ["p(95)<100"] // 95 percent of response times must be below 500ms
+    http_req_duration: ["p(95)<10"] // 95 percent of response times must be below 500ms
   }
 };
 
